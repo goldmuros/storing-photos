@@ -1,0 +1,8 @@
+{
+  "name": "storing-photos",
+  "template": "Default",
+  "isConfigured": {
+    "client": false,
+    "server": false
+  }
+}
