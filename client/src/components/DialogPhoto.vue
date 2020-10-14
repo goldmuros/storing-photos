@@ -7,6 +7,14 @@
       <v-col cols="4">Camera: {{ photo.camera }}</v-col>
       <v-col cols="4">Hashtag: {{ photo.hashtag }}</v-col>
     </v-row>
+    <v-btn fab color="red" dark absolute bottom right class="mb-9 pb-0">
+      <v-icon>mdi-share-variant</v-icon>
+      <template v-slot:activator>
+        <div>
+          <span> Shared URL</span>
+        </div>
+      </template>
+    </v-btn>
   </div>
 </template>
 
