@@ -11,11 +11,9 @@
         <photo :photo="photo"></photo>
       </v-col>
     </v-row>
-    <dialog-photo
-      :photo="selectedPhoto"
-      v-if="openDialog"
-      @close="closePhoto"
-    />
+    <v-dialog v-model="openDialog">
+      <dialog-photo :photos="photos" :photo="selectedPhoto" @close="closePhoto" />
+    </v-dialog>
   </v-container>
 </template>
 
@@ -57,7 +55,6 @@ export default {
       this.openDialog = true;
     },
     closePhoto() {
-      console.log("closePhoto");
       this.openDialog = false;
     }
   },

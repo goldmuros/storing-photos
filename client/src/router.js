@@ -12,11 +12,6 @@ export default new Router({
       path: "/",
       name: "gallery",
       component: Gallery
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: () => import("./views/About.vue")
     }
   ]
 });
